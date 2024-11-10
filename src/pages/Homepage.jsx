@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import Hero from "../components/hero";
+import Hero from "../components/Hero";
 import heroIMG from "../assets/images/wordsession.jpg";
 import styleIMG from "../assets/images/TLBC-Slider2.png";
 import NewsletterSubscription from "../components/NewsletterSubscription";
