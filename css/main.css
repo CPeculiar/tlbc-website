@@ -1780,6 +1780,13 @@ input::-moz-focus-inner {
     padding-left: 10px;
   }
 
+  .display-1 {
+    font-size: 2.1rem;
+    margin-top: 0px !important;
+    text-align: center !important;
+  }
+
+
 }
 
 @media screen and (max-width:400px) {
@@ -2594,6 +2601,8 @@ html.no-csstransitions .hero-content {
   
 }
 
+
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * about
@@ -2618,6 +2627,7 @@ html.no-csstransitions .hero-content {
     margin-top: 0px;
   }
 
+
 }
 
 @media screen and (max-width:600px) {
@@ -2633,6 +2643,7 @@ html.no-csstransitions .hero-content {
     margin-top: 0px;
   }
 
+
 }
 
 @media screen and (max-width:400px) {
@@ -2643,6 +2654,11 @@ html.no-csstransitions .hero-content {
   .about-content .column:last-child {
     padding-left: 0;
   }
+
+  .about-h2 {
+    font-size: 3rem;
+    text-align: center;
+}
 
 }
 
@@ -3473,6 +3489,10 @@ html.no-csstransitions .hero-content {
   position: relative;
 }
 
+.contact-h3 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
 /* ------------------------------------------------------------------- 
  * ## page content 
  * ------------------------------------------------------------------- */
@@ -3493,7 +3513,7 @@ html.no-csstransitions .hero-content {
 /* church staff
  * ----------------------------------------------- */
 .church-staff {
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 .church-staff__item {
@@ -3551,7 +3571,7 @@ html.no-csstransitions .hero-content {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 .event-thumb {
@@ -3616,6 +3636,11 @@ html.no-csstransitions .hero-content {
 
   .event-thumb {
     padding: 2rem;
+  }
+
+  .contact-h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.6rem;
   }
 
 }

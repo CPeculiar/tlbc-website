@@ -8,10 +8,10 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <Router>
-   <AuthProvider>
+   
+   
     <App />
-    </AuthProvider>
-    </Router>
+    
+    
   </StrictMode>,
 )

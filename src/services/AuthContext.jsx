@@ -41,10 +41,17 @@ export function AuthProvider({ children }) {
   const value = {
     currentUser,
     setCurrentUser,
-    login,
+    // login,
     register,
-    logout
+    // logout,
+    login: (email, password) => signInWithEmailAndPassword(auth, email, password),
+    logout: () => signOut(auth),
   };
+
+  // Don't render children until auth is initialized
+  if (loading) {
+    return <div>Loading...</div>; // Or your loading component
+  }
 
   return (
     <AuthContext.Provider value={value}>

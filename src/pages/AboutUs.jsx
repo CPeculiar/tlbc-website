@@ -35,51 +35,51 @@ const AboutUs = () => {
         </p>
 
         <div class="row">
-            <div class="column large-half medium-full">
-                <h2 className='church-staff__name'>Our Vision.</h2>
-                <p className='text-justify'>
+            <div class="column large-half medium-full text-center">
+                <h2 className='about-h2'>Our Vision.</h2>
+                <p className='text-justify lead'>
                 To take the word of Faith to the nations of the world and
-                to call men by the Gospel into the glory of God..
+                to call men by the Gospel into the glory of God.
                 </p>
             </div>
 
-            <div class="column large-half medium-full">
-                <h2 className='church-staff__name'>Our Mission.</h2>
-                <p className='text-justify'>
-                To win sinners to Christ <br/>
-                To build saints in Christ <br/>
-                To make every saint a minister of the Gospel 
+            <div class="column large-half medium-full ">
+                <h2 className='about-h2'>Our Mission.</h2>
+                <p className='text-justify lead'>
+                1. To win sinners to Christ. <br/>
+                2. To build saints in Christ. <br/>
+                3. To make every saint a minister of the Gospel.
                 </p>
             </div>
         </div>
 
         <blockquote cite="http://where-i-got-my-info-from.com">
-            <p className='mb-6'>
+            <p className='mb-4 text-justify'>
             Whereunto he called you by our gospel, to the obtaining of the glory of our Lord Jesus Christ.
             </p>
-            <cite className='mb-12'>
+            <cite className='mb-8 md:text-xl 2xl:text-3xl italic'>
                 <a>2 Thessalonians 2:14 KJV</a>
             </cite>
 
-            <p className='mb-6'>
+            <p className='mb-4 text-justify'>
             “The Lord’s Brethren Church was born out of my fellowship with the father and as an expression of
              my trainings in the work of the ministry.”</p>
-             <cite>
+             <cite className='md:text-xl 2xl:text-3xl italic'>
                 <a>Reverend Elochukwu Udegbunam</a>
             </cite>
         </blockquote>
         <br/>
 
         
-        <h2 className='text-center display-1'>Meet The Pastor of TLBC Int'l.</h2>
+        <h2 className='text-center display-1' style={{marginTop: "2rem"}}>Meet The Pastor of <br/>TLBC International.</h2>
 <div class="row">
     <div class="column">
 
-        <div class="media-wrap flex items-center justify-center mt-4">
+        <div class="media-wrap flex items-center justify-center">
                 <img src="/Reverend-Elo.jpg" 
                   srcset="/Reverend-Elo.jpg 2000w, 
                           /Reverend-Elo.jpg 1000w, 
-                          /Reverend-Elo.jpg 500w" sizes="(max-width: 3000px) 110vw, 2000px" alt="" className='bg-red' />
+                          /Reverend-Elo.jpg 500w" sizes="(max-width: 600px) 330vw, (max-width: 3000px) 110vw, 2000px" alt="" className='bg-red' />
         </div>
    
 
@@ -90,7 +90,7 @@ const AboutUs = () => {
                 <h2 class="display-1">Reverend Elochukwu Udegbunam</h2>
             </div>
 
-            <p className='text-justify'>
+            <p>
             Reverend Elochukwu Udegbunam is a supernatural and skillful
              minister of God’s word whose ministry has helped many around 
              the world experience a victorious, impactful and effective
@@ -139,7 +139,7 @@ const AboutUs = () => {
                             </h4>
                         </div>
 
-                        <p>
+                        <p className='text-justify'>
                        Pastor Mmesoma Okafor is the zonal Director of TLBC Int'l Awka zone. <br/>
                        She is also the General Secretary of TLBC Int'l and a member of the Central
                         Executive Council of the Ministry.
@@ -159,7 +159,7 @@ const AboutUs = () => {
                             </h4>
                         </div>
 
-                        <p>
+                        <p className='text-justify'>
                         Pastor Ikechukwu Egwu is the zonal Director of TLBC Int'l Nnewi zone. <br/>
                        He is also the Finance Director of TLBC Int'l and a member of the Central
                         Executive Council of the Ministry.
@@ -179,7 +179,7 @@ const AboutUs = () => {
                             </h4>
                         </div>
     
-                        <p>
+                        <p className='text-justify'>
                         Pastor Eloka Okeke is the zonal Director of TLBC Int'l Ekwulobia zone. <br/>
                        He is also the Director of the Ministerial Bureau of TLBC Int'l and a 
                        member of the Central Executive Council of the Ministry.
@@ -199,7 +199,7 @@ const AboutUs = () => {
                             </h4>
                         </div>
     
-                        <p>
+                        <p className='text-justify'>
                         Evangelist Chidimma Egwu is the zonal Director of TLBC Int'l Owerri zone. <br/>
                        He is also the Cell Ministry Director of TLBC Int'l and a 
                        member of the Pastoral Team of the Ministry.

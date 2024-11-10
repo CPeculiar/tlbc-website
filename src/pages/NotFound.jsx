@@ -5,18 +5,18 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen w-full bg-[#7987a1] flex items-center justify-center p-4">
+    <div className="min-h-screen w-full bg-gray-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full text-center">
-        <h1 className="text-blue-600 text-8xl font-bold mb-4">404</h1>
-        <h2 className="text-slate-600 text-3xl font-semibold mb-4">
+        <h1 className="text-[#3b0d11] text-8xl font-bold mb-4">404</h1>
+        <h2 className="text-gray-800 text-3xl font-semibold mb-4">
           Page Not Found
         </h2>
-        <p className="text-slate-500 mb-8">
+        <p className="text-gray-600 mb-8">
           Sorry, the page you are looking for could not be found.
         </p>
         <button
           onClick={() => navigate(-1)}
-          className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-400 transition-colors duration-300 flex items-center justify-center gap-2 mx-auto"
+          className="px-6 py-2 bg-[#3b0d11] text-white rounded-lg hover:bg-[#2a090c] transition-colors duration-200 flex items-center justify-center gap-2 mx-auto"
         >
           <svg
             className="w-5 h-5"

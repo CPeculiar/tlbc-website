@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import headerIMG from '/android-chrome-192x192.png';
 
 import '../../css/base.css';
-import '../../css/main.css'
+import '../../css/main.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
