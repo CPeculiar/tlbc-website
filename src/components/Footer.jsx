@@ -66,22 +66,18 @@ const Footer = () => {
 
         <div className="row footer-top">
           <div className="column large-4 medium-5 tab-full">
-            <div className="footer-logo">
-              <a className="site-footer-logo" href="index.html">
-                <h3 className="text-white mb-0">TLBC Int'l</h3>
-              </a>
-            </div>
-            <p>
-              Have any question? <br />
+            <h4 className="h6">
+              Have any question? 
+              </h4>
+              <p>
               Contact us on:
-              <a href="tel: 0913-444-5037" className="hover:text-red-300">
-                <p className="text-muted mb-0"> 0913-444-5037</p>
+              <a href="tel: 0913-444-5037">
+                <p className="text-[#ffffff80] mb-0 hover:text-white"> 0913-444-5037</p>
               </a>
               <a
                 href="mailto:info@thelordsbrethrenchurch.org"
-                className="hover:text-red-300"
               >
-                info@thelordsbrethrenchurch.org
+               <p className="text-[#ffffff80] mb-0 hover:text-white"> info@thelordsbrethrenchurch.org </p>
               </a>
             </p>
           </div>

@@ -3448,8 +3448,8 @@ html.no-csstransitions .hero-content {
 }
 
 .page-header--contact {
-  background-image: url(../images/header-bgs/TLBC-Slider2.png);
-  background-size: auto;
+  background-image: url(/tlbc24.jpg);
+  background-size: cover;
   background-position: 'center';
   background-repeat: 'no-repeat',
 }
