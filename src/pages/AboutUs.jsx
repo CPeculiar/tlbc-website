@@ -71,7 +71,7 @@ const AboutUs = () => {
         <br/>
 
         
-        <h2 className='text-center'>Meet The Pastor of TLBC Int'l.</h2>
+        <h2 className='text-center display-1'>Meet The Pastor of TLBC Int'l.</h2>
 <div class="row">
     <div class="column">
 
@@ -123,8 +123,7 @@ const AboutUs = () => {
 </div>
 
 
-
-<h2>Meet our zonal Pastors.</h2>
+<h2 className='display-1'>Meet our zonal Pastors.</h2>
 
                 <div class="row block-large-1-2 block-tab-full church-staff">
                     <div class="column church-staff__item">
