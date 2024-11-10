@@ -218,7 +218,7 @@ function ContactUs() {
               </div>
 
               <div class="column large-6 tab-full">
-                <h3 className="contact-h3">Contact Info.</h3>
+                <h3 className="display-1">Contact Info.</h3>
                 <a
                   href="mailto:info@thelordsbrethrenchurch.org"
                   className="hover:text-[#3b0d11]"
@@ -231,7 +231,7 @@ function ContactUs() {
               </div>
             </div>
 
-            <h2 className="contact-h3">Get In Touch.</h2>
+            <h2 className="display-1">Get In Touch.</h2>
 
             {showSuccess && (
               <Alert type="success" className="text-lg">

@@ -36,7 +36,7 @@ const AboutUs = () => {
 
         <div class="row">
             <div class="column large-half medium-full text-center">
-                <h2 className='about-h2'>Our Vision.</h2>
+                <h2 className='display-1'>Our Vision.</h2>
                 <p className='text-justify lead'>
                 To take the word of Faith to the nations of the world and
                 to call men by the Gospel into the glory of God.
@@ -44,7 +44,7 @@ const AboutUs = () => {
             </div>
 
             <div class="column large-half medium-full ">
-                <h2 className='about-h2'>Our Mission.</h2>
+                <h2 className='display-1'>Our Mission.</h2>
                 <p className='text-justify lead'>
                 1. To win sinners to Christ. <br/>
                 2. To build saints in Christ. <br/>
