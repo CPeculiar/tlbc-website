@@ -76,10 +76,10 @@ const AboutUs = () => {
     <div class="column">
 
         <div class="media-wrap flex items-center justify-center mt-4">
-                <img src="images/thumbs/events/Reverend-Elo.jpg" 
-                  srcset="images/thumbs/events/Reverend-Elo.jpg 2000w, 
-                          images/thumbs/events/Reverend-Elo.jpg 1000w, 
-                          images/thumbs/events/Reverend-Elo.jpg 500w" sizes="(max-width: 3000px) 110vw, 2000px" alt="" className='bg-red' />
+                <img src="/Reverend-Elo.jpg" 
+                  srcset="/Reverend-Elo.jpg 2000w, 
+                          /Reverend-Elo.jpg 1000w, 
+                          /Reverend-Elo.jpg 500w" sizes="(max-width: 3000px) 110vw, 2000px" alt="" className='bg-red' />
         </div>
    
 
@@ -124,21 +124,13 @@ const AboutUs = () => {
 
 
 
-
-
-
-
-
-
-
-
 <h2>Meet our zonal Pastors.</h2>
 
                 <div class="row block-large-1-2 block-tab-full church-staff">
                     <div class="column church-staff__item">
                         <div class="church-staff__header">
                             <div class="church-staff__picture">
-                                <img src="images/avatars/pst-mmeso.jpg" alt="" />
+                                <img src="/pst-mmeso.jpg" alt="" />
                             </div>
                             <h4 class="church-staff__name">
                                 Pastor Mmesoma Okafor
@@ -158,7 +150,7 @@ const AboutUs = () => {
                     <div class="column church-staff__item">
                         <div class="church-staff__header">
                             <div class="church-staff__picture">
-                                <img src="images/avatars/pst-iyke.jfif" alt="" />
+                                <img src="/pst-iyke.jfif" alt="" />
                             </div>
                             <h4 class="church-staff__name">
                               Pastor Ikechukwu Egwu
@@ -178,7 +170,7 @@ const AboutUs = () => {
                     <div class="column church-staff__item">
                         <div class="church-staff__header">
                             <div class="church-staff__picture">
-                                <img src="images/avatars/pst-eloka.jpg" alt="" />
+                                <img src="/pst-eloka.jpg" alt="" />
                             </div>
                             <h4 class="church-staff__name">
                                 Pastor Eloka Okeke
@@ -198,7 +190,7 @@ const AboutUs = () => {
                     <div class="column church-staff__item">
                         <div class="church-staff__header">
                             <div class="church-staff__picture">
-                                <img src="images/avatars/evang.jfif" alt="" />
+                                <img src="/evang.jfif" alt="" />
                             </div>
                             <h4 class="church-staff__name">
                                Evangelist Chidimma Egwu
@@ -219,61 +211,6 @@ const AboutUs = () => {
         </div>
 
     </section>
-
-
-    
-    {/* <section id="about" className="s-about">
-
-<div className="row row-y-center about-content">
-
-    <div className="column large-half medium-full">
-        <h3 className="subhead">Welcome to Hesed</h3>
-        <p className="lead text-justify">
-        
-        Vero autem et officiis officia sint in odio in iusto. 
-        Blanditiis tempore ipsa saepe quaerat quas sed. Ut velit 
-        necessitatibus est repellat sunt quia fuga doloremque. 
-        Nostrum et ut optio suscipit eos quisquam et. Nulla molestiae 
-        voluptates hic et accusantium occaecati recusandae veniam cum.
-        </p>
-        <a href="/about" className="btn btn--primary btn--about">More About Hesed</a>
-    </div>
-    
-    <div class="column large-half medium-full ">
-    <ul class="about-sched">
-    <li className="mb-6 md:mb-8 lg:mb-12">
-                <h4 className='font-bold text-base sm:text-lg md:text-xl mb-4'>Main Church Service</h4>
-                <p className="mb-6 sm:mb-5 md:mb-6">
-                Sunday - 9:00 AM | 1:00 PM | 4:30 PM </p>
-                <p className="mb-12 sm:mb-12 md:mb-14">
-                1600 Amphitheatre Parkway, Mt. View, CA, 94043
-                </p>
-            </li>
-            </ul>
-    </div>
-    </div>
-    </section> */}
-           {/* {
-            <div>
-  font-family: "Lora", serif;
-  font-weight: 500;
-  font-size: 2.8rem;
-  line-height: 1.857;
-  margin-bottom: 3.6rem;
-  color: #000000;
-}
-
- <p className="text-justify p-2" style={{
-            lineHeight: "4rem", 
-       </div> 
-       }}>
-
- */}
-
-
-
-    
-
 
     </div>
   )

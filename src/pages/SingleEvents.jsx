@@ -134,10 +134,10 @@ function SingleEvents() {
 
 
         <div class="media-wrap flex items-center justify-center mt-4">
-                <img src="images/thumbs/events/Christmas-eve.jpg" 
-                  srcset="images/thumbs/events/Christmas-eve.jpg 2000w, 
-                          images/thumbs/events/Christmas-eve.jpg 1000w, 
-                          images/thumbs/events/Christmas-eve.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 1200px) 100vw, (max-width: 2000px) 100vw, 2000px" alt="" />
+                <img src="/Christmas-eve.jpg" 
+                  srcset="/Christmas-eve.jpg 2000w, 
+                          /Christmas-eve.jpg 1000w, 
+                          /Christmas-eve.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 1200px) 100vw, (max-width: 2000px) 100vw, 2000px" alt="" />
         </div> 
 
         <div class="event-content Christmas Eve's">
@@ -163,10 +163,10 @@ function SingleEvents() {
 
 
         <div class="media-wrap flex items-center justify-center mt-4">
-                <img src="images/thumbs/events/New-year-eve.jpg" 
-                  srcset="images/thumbs/events/New-year-eve.jpg 2000w, 
-                          images/thumbs/events/New-year-eve.jpg 1000w, 
-                          images/thumbs/events/New-year-eve.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 2000px) 100vw, 2000px" alt="" />
+                <img src="/New-year-eve.jpg" 
+                  srcset="/New-year-eve.jpg 2000w, 
+                          /New-year-eve.jpg 1000w, 
+                         /New-year-eve.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 2000px) 100vw, 2000px" alt="" />
         </div> 
 
         <div class="event-content New Year's Eve ">
