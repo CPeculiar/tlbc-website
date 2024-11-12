@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { db } from '../services/firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../services/firebase';
+import { useAuth } from "../services/AuthContext";
+
 
 // Custom Alert Component (reused from contact page)
 const Alert = ({ children, type }) => {
@@ -17,6 +21,7 @@ const Alert = ({ children, type }) => {
 };
 
 const SubscriberAdmin = () => {
+  const { login, logout } = useAuth();
   const [subscribers, setSubscribers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
@@ -65,10 +70,16 @@ const SubscriberAdmin = () => {
     document.body.removeChild(a);
   };
 
-  const handleSignOut = () => {
-    localStorage.clear();
-    navigate('/');
-  };
+  const handleLogout = async () => {
+    try {
+      await logout();
+      localStorage.clear(); // Clear the local storage
+      navigate('/'); // Redirect to the homepage
+    } catch (error) {
+      console.error('Logout error:', error);
+      alert("Failed to log out: " + error.message);
+    }
+  }
 
   if (isLoading) {
     return (
@@ -107,7 +118,7 @@ const SubscriberAdmin = () => {
                 Download CSV
               </button>
               <button
-                onClick={handleSignOut}
+                onClick={handleLogout}
                 className="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors duration-200 text-sm font-medium"
               >
                 Sign Out

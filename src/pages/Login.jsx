@@ -25,7 +25,7 @@ const Alert = ({ children, type }) => {
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { login } = useAuth();
+  const { login, logout } = useAuth();
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -59,6 +59,17 @@ const Login = () => {
   function extractErrorCode(errorMessage) {
     const match = errorMessage.match(/\(auth\/([^\)]+)\)/);
     return match ? match[1] : errorMessage;
+  }
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      localStorage.clear(); // Clear the local storage
+      navigate('/'); // Redirect to the homepage
+    } catch (error) {
+      console.error('Logout error:', error);
+      alert("Failed to log out: " + error.message);
+    }
   }
 
   return (

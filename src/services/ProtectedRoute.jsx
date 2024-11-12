@@ -3,11 +3,11 @@ import { Navigate, useLocation } from 'react-router-dom';
 import { useAuth } from './AuthContext';
 
 function ProtectedRoute({ element }) {
-  const { currentUser } = useAuth();
+  const { currentUser, isLoggedIn } = useAuth();
   const location = useLocation();
 
-  // If there's no user logged in, redirect to login page
-  if (!currentUser) {
+   // If there's no user logged in or the user is logged out, redirect to login page
+   if (!currentUser || !isLoggedIn) {
     // Save the attempted location so we can redirect back after login
     return <Navigate to="/login" state={{ from: location }} replace />;
   }

@@ -15,6 +15,7 @@ export function useAuth() {
 
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loading, setLoading] = useState(true);
 
   function login(email, password) {
@@ -32,6 +33,7 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
+      setIsLoggedIn(!!user);
       setLoading(false);
     });
 
@@ -40,16 +42,15 @@ export function AuthProvider({ children }) {
 
   const value = {
     currentUser,
+    isLoggedIn,
     setCurrentUser,
-    // login,
     register,
-    // logout,
     login: (email, password) => signInWithEmailAndPassword(auth, email, password),
     logout: () => signOut(auth),
   };
 
-  // Don't render children until auth is initialized
-  if (loading) {
+   // Don't render children until auth is initialized
+   if (loading) {
     return <div>Loading...</div>; // Or your loading component
   }
 
