@@ -124,12 +124,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="row footer-bottom">
+        <div className="row footer-bottom text-center">
           <div className="column ss-copyright">
             <span>© Copyright TLBC Int'l</span>
-            <span>
+            {/* <span>
               Designed by <a href="https://www.thelordsbrethrenchurch.org/">Tech Academy @2024</a>
-            </span>
+            </span> */}
           </div>
         </div>
 

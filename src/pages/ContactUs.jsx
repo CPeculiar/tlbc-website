@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 // Custom Alert Component
 const Alert = ({ children, type }) => {
@@ -94,31 +95,52 @@ function ContactUs() {
     
         if (validateForm()) {
           try {
-            // Here you would typically make an API call to submit the form
-            // For demonstration, we'll simulate an API call
-            await new Promise(resolve => setTimeout(resolve, 1000));
             
-            setShowSuccess(true);
-            setFormData({
-              name: "",
-              email: "",
-              phone: "",
-              church: "",
-              message: ""
-            });
+            const response = await emailjs.send(
+              "service_9y9qd0r",
+              "template_cywtduf",
+              {
+                to_email: "info@thelordsbrethrenchurch.org",
+                from_name: formData.name,
+                from_phone: formData.phone,
+                from_email: formData.email,
+                church: formData.church,
+                message: formData.message,
+              },
+              "G0uRp4jJwwELDgewX"
+            );
             
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-              setShowSuccess(false);
-            }, 5000);
-          } catch (error) {
-            setErrors({ submit: "Failed to submit form. Please try again." });
-          }
-        }
-        
-        setIsSubmitting(false);
-      };
-    
+            if (response.status === 200) {
+              setShowSuccess(true);
+              setFormData({
+                name: "",
+                email: "",
+                phone: "",
+                church: "",
+                message: ""
+              });
+              
+
+    // Hide success message after 5 seconds
+    setTimeout(() => {
+      setShowSuccess(false);
+    }, 5000);
+  } else {
+    setErrors({ submit: "Failed to send message. Please try again." });
+  }
+} catch (error) {
+  console.error("Error:", error);
+  setErrors({ submit: "Failed to submit form. Please try again." });
+}
+}
+
+setIsSubmitting(false);
+};
+
+
+
+
+
       const handleChange = (e) => {
         const { name, value } = e.target;
         
