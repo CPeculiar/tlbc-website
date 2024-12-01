@@ -15,30 +15,19 @@ const Homepage = () => {
       };
 
   const events = [
+
     {
       id: 1,
-      title: "Pastoral visit to TLBC Int'l Nnewi Zone",
-      date: "Sunday, November 17, 2024",
-      day: "28",
-      month: "SEP",
-      time: "8:00 AM — 10:30 AM",
-      location: "31 Oraifite Road, Uruagu Nnewi (By Nwanyị Imo Bus Stop, 2nd Floor, Fidelity Bank Building), Anambra State",
-      description:
-        "Our dear Man of God, Reverend Elochukwu Udegbunam will be visiting TLBC Int'l Nnewi zone",
-      image: "/PASVisit.jpg",
-    },
-    {
-      id: 2,
       title: "Presidential Appreciation Service",
       date: "Sunday, December 8, 2024",
       time: "8:00 AM — 10:30 AM",
       location: "All TLBC Int'l church expressions",
       description:
         "Ministry-wide appreciation service for our dear Man of God, Reverend Elochukwu Udegbunam.",
-      image: "/PAS2023.jpg",
+      image: "/PresidentialApp.jpg",
     },
     {
-        id: 3,
+        id: 2,
         title: "Thanksgiving Service",
         date: "Sunday, December 15, 2024",
         time: "8:00 AM — 10:30 AM",
@@ -48,34 +37,34 @@ const Homepage = () => {
         image: "/Thanksgiving.jpg",
       },
       {
-        id: 4,
+        id: 2,
         title: "Parah 2024",
         date: "Friday, December 20, 2024",
-        time: "2:00 PM — 6:00 PM",
+        time: "9:00 PM",
         location: "The Lord’s Brethren Place, Awka",
         description:
           "Ministry-wide Workers Party for the year 2024.",
-        image: "/simchar.jpg",
+        image: "/Parah.jpg",
       },
+      // {
+      //   id: 4,
+      //   title: "Christmas Eve's Service",
+      //   date: "Tuesday, December 24, 2024",
+      //   time: "5:00 PM — 7:30 PM",
+      //   location: "The Lord’s Brethren Place, Awka",
+      //   description:
+      //     "Ministry-wide Christmas Eve's Service for the year 2024.",
+      //   image: "/Christmas-eve.jpg",
+      // },
       {
-        id: 5,
-        title: "Christmas Eve's Service",
-        date: "Tuesday, December 24, 2024",
-        time: "5:00 PM — 7:30 PM",
-        location: "The Lord’s Brethren Place, Awka",
-        description:
-          "Ministry-wide Christmas Eve's Service for the year 2024.",
-        image: "/Christmas-eve.jpg",
-      },
-      {
-        id: 6,
+        id: 3,
         title: "New Year's Eve Service",
         date: "Tuesday, December 31st, 2024",
         time: "9:00 PM",
         location: "The Lord’s Brethren Place, Awka",
         description:
           "Ministry-wide New Year Eve Service for the year 2024.",
-        image: "/New-year-eve.jpg",
+        image: "/NewYearEve.jpg",
       },
   ];
 
@@ -90,10 +79,14 @@ const Homepage = () => {
             <div className="column large-half medium-full">
               <h3 className="subhead text-center"> The Lord's brethren CHURCH INT'L</h3>
               <p className="lead text-justify">
-              TLBC Int'l is a community of the Lord’s Brethren who share the same passion 
-              as the Lord Jesus Christ to reach the whole world with the message of His saving grace.
-              We make known and bring men into their inheritance in Christ, by teaching them the 
-              principles and teachings of the Bible through the Holy Spirit.
+             The Lord’s Brethren Church International (TLBC) is the church arm of the Believers 
+             School of Faith Ministries, a vibrant community of believers who, by faith, recognize 
+             themselves as brethren with Jesus Christ and share the same Father as He. We are passionate 
+             about spreading the Good News of His love to people across the world.
+ 
+             Our vision is to call men and women by the Gospel of Jesus Christ into the Glory of God, 
+             as we take the word of faith to peoples and nations of the world, accompanied by the 
+             demonstration of the Holy Spirit.
               </p>
               <a href="/about" className="btn btn--primary btn--about">
                 More About TLBC
@@ -143,21 +136,26 @@ const Homepage = () => {
         <section className="s-connect">
           <div className="row connect-content">
             <div className="column large-half tab-full">
-              <h3 className="display-1">Why TLBC?</h3>
+              <h3 className="display-1">ABOUT TLBCM</h3>
               <p
                 className="text-justify p-2"
                 style={{
                   lineHeight: "4rem",
                 }}
               >
-               The Lord’s Brethren Church International is a place where you will find the ministry of God’s Word.
-               At TLBC Int'l, we are committed to teaching God’s Word with clarity and accuracy, rooted in sound 
-               bible interpretation. We are a community of the Lord’s Brethren who share the same passion as 
-               the Lord Jesus Christ to reach the whole world with the message of His saving grace. We make known 
-               the plan of God for all and bring men into their inheritance in Christ, by teaching them the 
-               whole counsel of God by the scriptures through the Holy Spirit.
+               The Lord’s Brethren Campus Ministry (TLBCM) is the campus arm of our Ministry, 
+               entrusted with the responsibility of bringing the message of the Gospel to 
+               students in tertiary institutions. It is a platform inspired by the Holy Spirit 
+               years ago, aimed at reaching individuals at this critical stage of life with the 
+               Gospel and the vision of our Ministry.
+ 
+              Through TLBCM, we seek to give students’ lives meaning and encourage them to actively 
+              participate in the work of ministry, both during their time in higher education and beyond.
               </p>
-
+              {/* TLBC Int'l is a community of the Lord’s Brethren who share the same passion 
+              as the Lord Jesus Christ to reach the whole world with the message of His saving grace.
+              We make known and bring men into their inheritance in Christ, by teaching them the 
+              principles and teachings of the Bible through the Holy Spirit. */}
               <a
                 href="/contact"
                 className="btn btn--primary h-full-width"
@@ -166,14 +164,22 @@ const Homepage = () => {
               </a>
             </div>
             <div className="column large-half tab-full">
-              <h3 className="display-1">Connect with us.</h3>
+              <h3 className="display-1">ABOUT TLTN</h3>
               <p
                 className="text-justify"
                 style={{
                   lineHeight: "4rem",
                 }}
               >
-               TLBC Int'l has expressions across various 
+               The Lord’s Teen Network (TLTN) is our dedicated ministry to teenagers, both within our church 
+               and in various communities. This arm of the Ministry exists primarily because our journey began 
+               as a teenage gathering, and we remain deeply committed to engaging with teenagers, catching them 
+               young for Christ, and helping them discover a purpose for living.
+ 
+              Through TLTN, we equip young people with the tools to apply discipleship in the context of modern culture, 
+              empowering them to live out their faith in a dynamic world.              </p>
+
+                {/* TLBC Int'l has expressions across various 
                locations in Nigeria. 
                Our locations include:
                 Awka, Nnewi, Ihiala, Ekwulobia and Onitsha.
@@ -182,7 +188,7 @@ const Homepage = () => {
                 Anambra State Polytechnic (ANSPOLY) Mgbakwu, Federal Polytechnic Nekede,
                 Federal Polytechnic Oko, Federal University of Technology Owerri, Nnamdi Azikiwe University,
                 College of Health Sciences UNIZIK, Okofia Nnewi and University of Lagos.
-                For more information or inquiries, please contact us at +234 913 444 3057.              </p>
+                For more information or inquiries, please contact us at +234 913 444 3057. */}
 
               <a
                 href="/contact"
@@ -195,7 +201,6 @@ const Homepage = () => {
         </section>
 
         {/* EVENTS */}
-
         <section className="s-events">
           <div className="mx-auto px-4 py-8 max">
             <div className="flex justify-between items-center mb-8">
@@ -278,7 +283,7 @@ const Homepage = () => {
             lineHeight: "4rem", 
         }}>
 
-                God has a purpose for your life.beautifully revealed in the gospel of His Son, Jesus Christ.
+                God has a purpose for your life beautifully revealed in the gospel of His Son, Jesus Christ.
                 We warmly invite you to explore our digital platforms, where you can access 
                 messages from our dear man of God, Reverend Elochukwu Udegbunam.
                 Through these messages, We believe you will receive education and 
@@ -298,7 +303,7 @@ const Homepage = () => {
 
               <div className="series-content__subscribe">
                 <p>
-                Visit our social media platforms and subscribe to our YouTube channel!
+                Visit our social media platforms and subscribe to our YouTube channel
                 </p>
 
                 <ul className="series-content__subscribe-links">
@@ -306,10 +311,10 @@ const Homepage = () => {
                     <a href="https://web.facebook.com/thelordsbrethrenchurchintl">Apple Podcast</a>
                   </li> */}
                   <li className="ss-spotify">
-                    <a href="https://t.me/TheLordsbrethrenchurchintl">Spotify</a>
+                    <a href="https://t.me/TheLordsbrethrenchurchintl">Telegram</a>
                   </li>
                   <li className="ss-soundcloud">
-                    <a href="https://www.instagram.com/elochukwutlbc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">SoundCloud</a>
+                    <a href="https://https://www.instagram.com/thelordsbrethrenchurchintl">Instagram</a>
                   </li>
                   <li className="ss-youtube">
                     <a href="https://t.me/TheLordsbrethrenchurchintl">Youtube</a>

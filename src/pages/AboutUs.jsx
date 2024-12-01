@@ -18,11 +18,20 @@ const AboutUs = () => {
         <div class="row">
           <div class="column">
             <p class="lead drop-cap text-justify">
-              TLBC Int'l is a community of the Lord’s Brethren who share the
-              same passion as the Lord Jesus Christ to reach the whole world
-              with the message of His saving grace. We make known and bring men
-              into their inheritance in Christ, by teaching them the principles
-              and teachings of the Bible through the Holy Spirit.
+            The Lord’s Brethren Church International (TLBC) is the church arm of the 
+            Believers School of Faith Ministries, a vibrant community of believers who, 
+            by faith, recognize themselves as brethren with Jesus Christ and share the 
+            same Father as He. We are passionate about spreading the Good News of His 
+            love to people across the world.
+ 
+            Our vision is to call men and women by the Gospel of Jesus Christ into the 
+            Glory of God, as we take the word of faith to peoples and nations of the world, 
+            accompanied by the demonstration of the Holy Spirit.
+  
+            At TLBC, the Word of God is Lord. We do not accept as doctrine or practice anything 
+            that is not firmly rooted in the teachings of Scripture. We believe that the Christian 
+            faith is both historical and apostolic, which means we do not innovate in ways that 
+            introduce doctrines or practices not taught or exemplified by the Apostles.
             </p>
 
             <div class="row">
@@ -36,10 +45,10 @@ const AboutUs = () => {
 
               <div class="column large-half medium-full ">
                 <h2 className="display-1">Our Mission.</h2>
-                <p className="text-justify lead">
-                  1. To win sinners to Christ. <br />
-                  2. To build saints in Christ. <br />
-                  3. To make every saint a minister of the Gospel.
+                <p className="lead">
+                  1. Win sinners to Christ. <br />
+                  2. Build saints in Christ. <br />
+                  3. Make every saint a minister of the Lord Jesus Christ.
                 </p>
               </div>
             </div>
@@ -65,8 +74,7 @@ const AboutUs = () => {
             <br />
 
             <h2 className="text-center display-1" style={{ marginTop: "2rem" }}>
-              Meet The Pastor of <br />
-              TLBC International.
+              ABOUT OUR PRESIDENT
             </h2>
             <div class="row">
               <div class="column">
@@ -87,33 +95,42 @@ const AboutUs = () => {
                     <h2 class="display-1">Reverend Elochukwu Udegbunam</h2>
                   </div>
 
-                  <p>
-                    Reverend Elochukwu Udegbunam is a supernatural and skillful
-                    minister of God’s word whose ministry has helped many around
-                    the world experience a victorious, impactful and effective
-                    life in the word of God. He is the founding Pastor of The
-                    Lord’s Brethren Church International. Within a few years of
-                    starting the church, he has raised many in the word of God
-                    who are passionate about the work of the ministry and as a
-                    result the church has centers in different cities in the
-                    country at the time with a wide following online.
+                  <p className="text-justify">
+                  Reverend Elochukwu Udegbunam is the founding pastor of the Lord’s Brethren Church 
+                  International (TLBC), a church born out of the ministry he began many years ago in Nkpor, 
+                  Anambra State, Nigeria. What started as a teenage ministry has since expanded into a thriving 
+                  church with a presence in multiple cities and states across Nigeria, along with an online following 
+                  that extends beyond the country’s borders.
+ 
+                  Affectionately called “Leader” by those closest to him—many of whom have been with him from the very 
+                  beginning—Reverend Elochukwu is a dynamic teacher of God’s Word, with a deep passion for teaching the 
+                  Bible with precision and accuracy. This commitment has been evident throughout his ministry, where he 
+                  has ensured that the Scriptures are understood in their original context, preserving their meaning and 
+                  relevance for today.                 
+                  </p>
+
+
+                  <p className="text-justify">
+                  His ministry is marked by miraculous signs, wonders, healings, and the gifts of the Spirit. Over the years, 
+                  he has shown that biblical scholarship and charismatic ministry can coexist harmoniously. As a result of 
+                  his obedience to the Lord, many have been saved, trained, and are now actively serving in the ministry of the Gospel.
                   </p>
 
                   <p className="text-justify">
-                    Reverend Elochukwu Udegbunam received a 3-fold mandate from
-                    the Lord for the work of the ministry: <br />
+                  Reverend Elochukwu Udegbunam received a three-fold mandate from the Lord for the work of the ministry: <br />
                     1. Winning Sinners to Christ <br />
                     2. Building Saints in Christ <br />
-                    3. Making Every saint a minister of the Lord Jesus Christ.{" "}
+                    3. Making Every Saint a Minister of the Lord Jesus Christ.{" "}
                     <br />
                   </p>
 
                   <p className="text-justify">
-                    He seeks to accomplish this through various platforms which
-                    includes: local churches, conferences, crusades, school of
-                    ministry, media and prints. His ministerial expressions are
-                    characterized with diverse signs, wonders, miraculous
-                    healings, and the gifts of the Holy Ghost.
+                    To fulfil this mandate, he utilizes various platforms,
+                    including local churches, conferences, crusades, Bible schools, 
+                    school of ministry, music, media and print publications. <br/>
+                    
+                    Currently, he resides in Awka with his family, all of whom are 
+                    actively involved in the work of the ministry.
                   </p>
                 </div>
               </div>

@@ -42,7 +42,7 @@ const Footer = () => {
               </li>
               <li class="social-list__item">
                 <a
-                  href="https://www.instagram.com/elochukwutlbc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  href="https://www.instagram.com/thelordsbrethrenchurchintl"
                   target="_blank"
                   title=""
                 >

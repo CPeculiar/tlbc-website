@@ -69,7 +69,7 @@ const Hero = ({ heroIMG }) => {
           <a href="https://t.me/TheLordsbrethrenchurchintl" target='_blank' title="">Telegram</a>
         </li>
         <li>
-          <a href="https://www.instagram.com/elochukwutlbc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank' title="">Instagram</a>
+          <a href="https://www.instagram.com/thelordsbrethrenchurchintl" target='_blank' title="">Instagram</a>
         </li>
       </ul>
 

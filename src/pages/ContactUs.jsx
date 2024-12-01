@@ -188,12 +188,12 @@ setIsSubmitting(false);
           <div class="column">
             <p class="lead drop-cap text-justify">
               TLBC Int'l has expressions across various locations in Nigeria.
-              Our locations include: Awka, Nnewi, Ihiala, Ekwulobia and Onitsha.
+              Our locations include: Awka, Nnewi, Ihiala, Ekwulobia, Onitsha, Oko, Owerri, Nekede, .
             </p>
 
             <p className="text-justify">
               We also have our campus churches at: Nnamdi Azikiwe University
-              Awka, Chukwuemeka Odumegwu Ojukwu (COOU) Uli and Igbariam, Anambra
+              Awka, Chukwuemeka Odumegwu Ojukwu (COOU) Uli and Igbariam campuses, Anambra
               State Polytechnic (ANSPOLY) Mgbakwu, Federal Polytechnic Nekede,
               Federal Polytechnic Oko, Federal University of Technology Owerri,
               Nnamdi Azikiwe University, College of Health Sciences UNIZIK,

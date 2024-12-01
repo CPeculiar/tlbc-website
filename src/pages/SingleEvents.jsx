@@ -26,36 +26,36 @@ function SingleEvents() {
     <div class="column">
 
     <div class="media-wrap flex items-center justify-center mt-4">
-                <img src="/PASVisit.jpg" 
-                  srcset="/PASVisit.jpg 2000w, 
-                          /PASVisit.jpg 1000w, 
-                          /PASVisit.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 2000px) 100vw, 2000px" alt="" />
+                <img src="/PresidentialApp.jpg" 
+                  srcset="/PresidentialApp.jpg 2000w, 
+                          /PresidentialApp.jpg 1000w, 
+                          /PresidentialApp.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 2000px) 100vw, 2000px" alt="" />
         </div> 
-        <div class="event-content Pastoral visit">
+        <div class="event-content Presidential Appreciation service">
             <div class="event-title">
-                <h2 class="display-1">Pastoral visit to TLBC Int'l Nnewi Zone</h2>
+                <h2 class="display-1">Presidential Appreciation Service</h2>
             </div>
 
             <p>
-            Our dear Man of God, Reverend Elochukwu Udegbunam will be visiting TLBC Int'l Nnewi zone.
+            We will be celebrating the President of our Ministry, Reverend Elochukwu Udegbunam. 
+            It will be a ministry-wide appreciation service for our dear Man of God.
             </p>
-
             <p>
            Below are the program details:
             </p>
 
             <ul class="event-meta">
-                <li><strong>Date</strong> Sunday, November 17, 2024.</li>
+                <li><strong>Date</strong> Sunday, December 8, 2024 </li>
                 <li><strong>Time</strong>8:00 AM — 10:30 AM</li>
-                <li><strong>Location</strong>31 Oraifite Road, Uruagu Nnewi (By Nwanyị Imo Bus Stop, 2nd Floor, Fidelity Bank Building), Anambra State</li>
+                <li><strong>Location</strong>All TLBC Int'l church expressions</li>
             </ul>
         </div> 
 
-        <div class="media-wrap flex items-center justify-center mt-4">
+        {/* <div class="media-wrap flex items-center justify-center mt-4">
                 <img src="/PAS2023.jpg" 
                   srcset="/PAS2023.jpg 2000w, 
                           /PAS2023.jpg 1000w, 
-                          /PAS2023.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 2000px) 100vw, 2000px" alt="" />
+                          /PAS2023.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 2000px) 100vw, 2000px" alt=""/>
         </div> 
         <div class="event-content Presidential Appreciation">
             <div class="event-title">
@@ -75,7 +75,7 @@ function SingleEvents() {
                 <li><strong>Time</strong>8:00 AM — 10:30 AM</li>
                 <li><strong>Location</strong>All TLBC Int'l church expressions</li>
             </ul>
-        </div> 
+        </div>  */}
 
         <div class="media-wrap flex items-center justify-center mt-4">
                 <img src="/Thanksgiving.jpg" 
@@ -106,10 +106,10 @@ function SingleEvents() {
 
 
         <div class="media-wrap flex items-center justify-center mt-4">
-                <img src="/simchar.jpg" 
-                  srcset="/simchar.jpg 2000w, 
-                          /simchar.jpg 1000w, 
-                        /simchar.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 2000px) 100vw, 2000px" alt="" />
+                <img src="/Parah.jpg" 
+                  srcset="/Parah.jpg 2000w, 
+                          /Parah.jpg 1000w, 
+                        /Parah.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 2000px) 100vw, 2000px" alt="" />
         </div> 
 
         <div class="event-content Parah">
@@ -133,7 +133,7 @@ function SingleEvents() {
         </div> 
 
 
-        <div class="media-wrap flex items-center justify-center mt-4">
+        {/* <div class="media-wrap flex items-center justify-center mt-4">
                 <img src="/Christmas-eve.jpg" 
                   srcset="/Christmas-eve.jpg 2000w, 
                           /Christmas-eve.jpg 1000w, 
@@ -158,15 +158,15 @@ function SingleEvents() {
                 <li><strong>Time</strong>5:00 PM — 7:30 PM</li>
                 <li><strong>Location</strong>The Lord’s Brethren Place, Awka, Anambra State</li>
             </ul>
-        </div> 
+        </div>  */}
 
 
 
         <div class="media-wrap flex items-center justify-center mt-4">
-                <img src="/New-year-eve.jpg" 
-                  srcset="/New-year-eve.jpg 2000w, 
-                          /New-year-eve.jpg 1000w, 
-                         /New-year-eve.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 2000px) 100vw, 2000px" alt="" />
+                <img src="/NewYearEve.jpg" 
+                  srcset="/NewYearEve.jpg 2000w, 
+                          /NewYearEve.jpg 1000w, 
+                         /NewYearEve.jpg 500w" sizes="(max-width: 600px) 300vw, (max-width: 2000px) 100vw, 2000px" alt="" />
         </div> 
 
         <div class="event-content New Year's Eve ">
