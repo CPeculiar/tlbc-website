@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Hero from "../components/Hero";
 import heroIMG from "../assets/images/wordsession.jpg";
@@ -22,8 +22,7 @@ const Homepage = () => {
       date: "Sunday, December 8, 2024",
       time: "8:00 AM — 10:30 AM",
       location: "All TLBC Int'l church expressions",
-      description:
-        "Ministry-wide appreciation service for our dear Man of God, Reverend Elochukwu Udegbunam.",
+      description:  "Ministry-wide appreciation service for our dear Man of God, Reverend Elochukwu Udegbunam.",
       image: "/PresidentialApp.jpg",
     },
     {
@@ -32,21 +31,30 @@ const Homepage = () => {
         date: "Sunday, December 15, 2024",
         time: "8:00 AM — 10:30 AM",
         location: "All TLBC Int'l church expressions",
-        description:
-          "Ministry-wide Thanksgiving service for the year 2024.",
+        description: "Ministry-wide Thanksgiving service for the year 2024.",
         image: "/Thanksgiving.jpg",
       },
       {
-        id: 2,
+        id: 3,
         title: "Parah 2024",
         date: "Friday, December 20, 2024",
         time: "9:00 PM",
         location: "The Lord’s Brethren Place, Awka",
-        description:
-          "Ministry-wide Workers Party for the year 2024.",
+        description:  "Ministry-wide Workers Party for the year 2024.",
         image: "/Parah.jpg",
       },
-      // {
+      {
+        id: 4,
+        title: "New Year's Eve Service",
+        date: "Tuesday, December 31, 2024",
+        time: "9:00 PM",
+        location: "The Lord’s Brethren Place, Awka",
+        description: "Ministry-wide New Year Eve Service for the year 2024.",
+        image: "/NewYearEve.jpg",
+      },
+  ];
+
+         // {
       //   id: 4,
       //   title: "Christmas Eve's Service",
       //   date: "Tuesday, December 24, 2024",
@@ -56,17 +64,31 @@ const Homepage = () => {
       //     "Ministry-wide Christmas Eve's Service for the year 2024.",
       //   image: "/Christmas-eve.jpg",
       // },
-      {
-        id: 3,
-        title: "New Year's Eve Service",
-        date: "Tuesday, December 31st, 2024",
-        time: "9:00 PM",
-        location: "The Lord’s Brethren Place, Awka",
-        description:
-          "Ministry-wide New Year Eve Service for the year 2024.",
-        image: "/NewYearEve.jpg",
-      },
-  ];
+
+
+      const upcomingEvents = useMemo(() => {
+        const currentDate = new Date();
+        return events.filter(event => {
+          const eventDate = new Date(event.date);
+          // Reset time to start of day for accurate comparison
+          currentDate.setHours(0, 0, 0, 0);
+          eventDate.setHours(0, 0, 0, 0);
+          return eventDate >= currentDate;
+        });
+      }, []);
+
+  // const handleNavigation = (eventId) => {
+  //   navigate(`/event/${eventId}`);
+  // };
+  
+  // if (upcomingEvents.length === 0) {
+  //   return (
+  //     <div className="text-center py-12">
+  //       <p className="text-gray-600 text-xl">No upcoming events at the moment</p>
+  //     </div>
+  //   );
+  // }
+
 
   return (
     <>
@@ -211,8 +233,9 @@ const Homepage = () => {
               </div>
             </div>
 
+            {upcomingEvents.length > 0 ? (
             <div className="space-y-8 ">
-              {events.map((event) => (
+              {upcomingEvents.map((event) => (
                 <div
                   key={event.id}
                   className="flex flex-col event-div md:flex-row gap-6 bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
@@ -256,7 +279,12 @@ const Homepage = () => {
                 </div>
               ))}
             </div>
-          </div>
+          ) : (
+      <div className="text-center py-12">
+        <p className="text-gray-600 text-2xl">No upcoming events at the moment</p>
+      </div>
+    )}
+  </div>
         </section>
 
 

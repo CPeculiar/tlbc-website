@@ -1603,6 +1603,7 @@ input::-moz-focus-inner {
   text-transform: uppercase;
   letter-spacing: .3rem;
   color: #fb8b23;
+  /* color: #318CE7; */
   margin-top: 0;
   margin-bottom: .4rem;
   margin-left: 4px;
