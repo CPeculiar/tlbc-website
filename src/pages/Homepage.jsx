@@ -342,10 +342,10 @@ const Homepage = () => {
                     <a href="https://t.me/TheLordsbrethrenchurchintl">Telegram</a>
                   </li>
                   <li className="ss-soundcloud">
-                    <a href="https://https://www.instagram.com/thelordsbrethrenchurchintl">Instagram</a>
+                    <a href="https://www.instagram.com/thelordsbrethrenchurchintl">Instagram</a>
                   </li>
                   <li className="ss-youtube">
-                    <a href="https://t.me/TheLordsbrethrenchurchintl">Youtube</a>
+                    <a href="https://www.youtube.com/@thelordsbrethrenchurchintl">Youtube</a>
                   </li>
                 </ul>
               </div>
