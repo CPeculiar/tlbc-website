@@ -3,53 +3,44 @@ import React, { useMemo } from 'react';
 function SingleEvents() {
 
  // Function to check if an event is upcoming
- const isUpcomingEvent = (dateString) => {
-    const eventDate = new Date(dateString);
-    const today = new Date();
-    return eventDate >= today;
-  };
+//  const isUpcomingEvent = (dateString) => {
+//     const eventDate = new Date(dateString);
+//     const today = new Date();
+//     return eventDate >= today;
+//   };
+const isUpcomingEvent = (event) => {
+  const eventDate = new Date(event.startDate || event.date);
+  const today = new Date();
+  return eventDate >= today;
+};
+
 
   // Events data with their details
   const events = [
     {
-      title: "Presidential Appreciation Service",
-      date: "2024-12-08T08:00:00",
-      time: "8:00 AM — 10:30 AM",
+      title: "Good Friday Praise Night",
+      date: "2025-04-25T08:00:00",
+      time: "09:00 PM",
       location: "All TLBC Int'l church expressions",
-      description: "We will be celebrating the President of our Ministry, Reverend Elochukwu Udegbunam. It will be a ministry-wide appreciation service for our dear Man of God.",
-      image: "/PresidentialApp.jpg"
+      description: "We will be having a ministry-wide Praise Night with our dear Man of God Reverend Elochukwu Udegbunam.",
+      image: "/Good-friday.jpg"
     },
     {
-      title: "Thanksgiving Service",
-      date: "2024-12-15T08:00:00",
-      time: "8:00 AM — 10:30 AM",
-      location: "All TLBC Int'l church expressions",
-      description: "Ministry-wide Thanksgiving service for the year 2024.",
-      image: "/Thanksgiving.jpg"
+      title: "Pastors and Leaders Conference 2025",
+      startDate: "2025-05-07T08:00:00",
+      endDate: "2025-05-11T23:59:59",
+      time: "5PM",
+      location: "Kingdom City Prayer Camp, Awka",
+      description: "Ministry-wide camping meeting with our dear Man of God, Reverend Elochukwu Udegbunam.",
+      image: "/PLC-2025.jpg"
     },
-    {
-      title: "Parah 2024",
-      date: "2024-12-20T14:00:00",
-      time: "9:00 PM",
-      location: "The Lord's Brethren Place, Awka, Anambra State",
-      description: "Ministry-wide Workers Party for the year 2024.",
-      image: "/Parah.jpg"
-    },
-    {
-      title: "New Year's Eve Service",
-      date: "2024-12-31T21:00:00",
-      time: "9:00 PM",
-      location: "The Lord's Brethren Place, Awka, Anambra State",
-      description: "Ministry-wide New Year's Eve Service for the year 2024.",
-      image: "/NewYearEve.jpg"
-    }
   ];
 
   // Filter and sort upcoming events
   const upcomingEvents = useMemo(() => {
     return events
-      .filter(event => isUpcomingEvent(event.date))
-      .sort((a, b) => new Date(a.date) - new Date(b.date));
+    .filter(event => isUpcomingEvent(event))
+    .sort((a, b) => new Date(a.startDate || a.date) - new Date(b.startDate || b.date));    
   }, []);
 
 
@@ -98,12 +89,27 @@ function SingleEvents() {
                     <p>Below are the program details:</p>
 
                     <ul className="event-meta">
-                      <li><strong>Date</strong> {new Date(event.date).toLocaleDateString('en-US', { 
-                        weekday: 'long', 
-                        year: 'numeric', 
-                        month: 'long', 
-                        day: 'numeric' 
-                      })}</li>
+                    <li><strong>Date</strong> {
+                    (() => {
+                      const start = new Date(event.startDate || event.date);
+                      const end = event.endDate ? new Date(event.endDate) : null;
+
+                      if (end) {
+                        const sameMonth = start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear();
+
+                        return sameMonth
+                          ? `${start.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}–${end.getDate()}, ${end.getFullYear()}`
+                          : `${start.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} – ${end.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
+                      } else {
+                        return start.toLocaleDateString('en-US', {
+                          weekday: 'long',
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric'
+                        });
+                      }
+                    })()
+                  }</li>
                       <li><strong>Time</strong> {event.time}</li>
                       <li><strong>Location</strong> {event.location}</li>
                     </ul>
